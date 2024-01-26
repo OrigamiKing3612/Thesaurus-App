@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3999A8C82B62FDE500F1C062 /* Thesaurus_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999A8C72B62FDE500F1C062 /* Thesaurus_AppApp.swift */; };
-		3999A8CA2B62FDE500F1C062 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999A8C92B62FDE500F1C062 /* ContentView.swift */; };
 		3999A8CC2B62FDE700F1C062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3999A8CB2B62FDE700F1C062 /* Assets.xcassets */; };
 		3999A8CF2B62FDE700F1C062 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3999A8CE2B62FDE700F1C062 /* Preview Assets.xcassets */; };
+		3999A8D72B63098800F1C062 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999A8D62B63098800F1C062 /* ContentView.swift */; };
+		3999A8DA2B630F8800F1C062 /* ServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999A8D92B630F8800F1C062 /* ServerAPI.swift */; };
+		3999A8DC2B632A6200F1C062 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999A8DB2B632A6200F1C062 /* PagingView.swift */; };
+		3999A8DF2B632E6C00F1C062 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999A8DE2B632E6C00F1C062 /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3999A8C42B62FDE500F1C062 /* Thesaurus App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thesaurus App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3999A8C72B62FDE500F1C062 /* Thesaurus_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thesaurus_AppApp.swift; sourceTree = "<group>"; };
-		3999A8C92B62FDE500F1C062 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3999A8CB2B62FDE700F1C062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3999A8CE2B62FDE700F1C062 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3999A8D02B62FDE700F1C062 /* Thesaurus_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Thesaurus_App.entitlements; sourceTree = "<group>"; };
+		3999A8D62B63098800F1C062 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3999A8D92B630F8800F1C062 /* ServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAPI.swift; sourceTree = "<group>"; };
+		3999A8DB2B632A6200F1C062 /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		3999A8DE2B632E6C00F1C062 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				3999A8C72B62FDE500F1C062 /* Thesaurus_AppApp.swift */,
-				3999A8C92B62FDE500F1C062 /* ContentView.swift */,
+				3999A8D82B630B8900F1C062 /* Views */,
+				3999A8DD2B632E5400F1C062 /* Utils */,
 				3999A8CB2B62FDE700F1C062 /* Assets.xcassets */,
 				3999A8D02B62FDE700F1C062 /* Thesaurus_App.entitlements */,
 				3999A8CD2B62FDE700F1C062 /* Preview Content */,
@@ -67,6 +74,24 @@
 				3999A8CE2B62FDE700F1C062 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3999A8D82B630B8900F1C062 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3999A8DB2B632A6200F1C062 /* PagingView.swift */,
+				3999A8D62B63098800F1C062 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3999A8DD2B632E5400F1C062 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3999A8D92B630F8800F1C062 /* ServerAPI.swift */,
+				3999A8DE2B632E6C00F1C062 /* MockData.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3999A8CA2B62FDE500F1C062 /* ContentView.swift in Sources */,
+				3999A8DC2B632A6200F1C062 /* PagingView.swift in Sources */,
+				3999A8D72B63098800F1C062 /* ContentView.swift in Sources */,
+				3999A8DA2B630F8800F1C062 /* ServerAPI.swift in Sources */,
 				3999A8C82B62FDE500F1C062 /* Thesaurus_AppApp.swift in Sources */,
+				3999A8DF2B632E6C00F1C062 /* MockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +307,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Thesaurus App";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +336,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Thesaurus App";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
